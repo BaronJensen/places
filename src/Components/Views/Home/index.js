@@ -8,14 +8,13 @@ import Sidebar from "Components/Molecules/Sidebar"
 const HomeView = () => {
   return(
   <React.Fragment>
-	<PlacesProvider>
-      <Container 
-         
-          height="100vh"> 
-          <MapBox />
-           <Sidebar/>
-      </Container>
-   	</PlacesProvider>
+  	<PlacesProvider>
+        <Container
+            height="100vh"> 
+            <MapBox />
+            <Sidebar/>
+        </Container>
+     	</PlacesProvider>
   </React.Fragment>
   )
 }

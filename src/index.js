@@ -1,47 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ClayProvider from 'local_npm/clay-components'
+
 import App from './App';
 //import * as serviceWorker from './serviceWorker';
 const Init = ()=>(
-	<ClayProvider>
-	       	
 		<BrowserRouter>
 			<App />
 		</BrowserRouter> 
 
-	</ClayProvider>
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ReactDOM.render(<Init />, document.getElementById('root'));
 

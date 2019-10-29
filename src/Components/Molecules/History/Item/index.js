@@ -9,13 +9,11 @@ import { usePlacesContext} from 'Components/Providers/Places';
 
 
 const HistoryItem = (props) => {  
-
-  const {icon = "",name = "", id, formatted_address} = props
+  const {icon = "",name = "", id, formatted_address} = props;
   const {removePlace, selectPlace} = usePlacesContext()
 
   return(
   <React.Fragment>
-
     <Container background="white" 
         css={`
         cursor: pointer;

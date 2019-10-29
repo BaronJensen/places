@@ -12,7 +12,7 @@ import { Autocomplete } from '@react-google-maps/api'
 import { usePlacesContext} from 'Components/Providers/Places'
 import _ from "lodash"
 
- const YOUR_API_KEY =  process.env.REACT_APP_GOOGLE_MAP_API_KEY
+const YOUR_API_KEY =  process.env.REACT_APP_GOOGLE_MAP_API_KEY
 
 const Search = () => {
  const {selectPlace, addPlace} = usePlacesContext()

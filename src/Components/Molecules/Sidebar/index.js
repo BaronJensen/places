@@ -19,17 +19,14 @@ Sidebar
 */
 
 const Header =  (props)=>{
-
   return (
     <Container
         background="white"
-
         css={`
           z-index: 1;
           padding: 1rem;
-          
-             box-shadow: 0 0.4px 5px rgba(0,0,0,0.3);
-          `}
+          box-shadow: 0 0.4px 5px rgba(0,0,0,0.3);
+        `}
         tabletCSS={`
           position:fixed;
           width: auto;
@@ -39,12 +36,12 @@ const Header =  (props)=>{
           transition: 0.2s;
           box-shadow: 0 0.4px 5px rgba(0,0,0,0.3);
           border-radius: 10px;
-          `}>
+        `}>
 
           <Text fontSize="24px">🌍 Places</Text>
           <Search />
 
-      </Container>)
+    </Container>)
 }
 
 
@@ -58,22 +55,16 @@ const Body =  (props)=>{
       setOpen(true)
     else
       setOpen(false)
-
-
   },[current])
 
 
   return (    
     <Container>
-      <Container 
-  
+      <Container
         background="#f5f5f5"
         corner="10px"
-
         css={`
           padding: 1rem;
-
-
         `}
         tabletCSS={`
           position:fixed;
@@ -84,34 +75,34 @@ const Body =  (props)=>{
           bottom: 0;
           transition: 0.2s;
           box-shadow: 0 0.4px 5px rgba(0,0,0,0.3);
-
           ${open && `
 
               top: 40vh;
               overflow-y: scroll;
 
             `}
-     
           `}>
+
           <Container 
-          onClick={()=>{setOpen(!open)}}
+            onClick={()=>{setOpen(!open)}}
 
-          center 
-          tabletCSS="display:inline-block;"
-          css={`
-              display: none;
-              font-size: 24px;
-              margin-bottom: 1rem;
-            
+            center 
+            tabletCSS="display:inline-block;"
+            css={`
+                display: none;
+                font-size: 24px;
+                margin-bottom: 1rem;
+              
 
-            `}>
-         {!open? <IconArrowUp />:<IconArrowDown/>}
+              `}>
+              {!open? 
+                  <IconArrowUp />:
+                  <IconArrowDown/>}
           </Container>
           
-        {current?<PlaceInfo {...current} />:<History />}
-  
-
-
+        {current?
+          <PlaceInfo {...current} />:
+          <History />}
       </Container>
   </Container>)
 }
@@ -134,6 +125,7 @@ const Sidebar = () => {
           top: 1rem;
           overflow: auto;
       `}
+
       tabletCSS={`
         position: relative;
         width: auto;
@@ -141,10 +133,7 @@ const Sidebar = () => {
         background: transparent;
         box-shadow: none;
         border-radius: none;
-     
-        `}>
-
-
+      `}>
         <Header/>
         <Body />
  

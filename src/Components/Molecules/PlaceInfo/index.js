@@ -2,8 +2,6 @@ import React from 'react';
 
 import {Container, Text} from 'local_npm/react-container';
 
-
-import IconHistory from "react-md-icon/dist/BaselineHistory";
 import IconClose from "react-md-icon/dist/BaselineClose";
 import { usePlacesContext} from 'Components/Providers/Places';
 import _ from "lodash"

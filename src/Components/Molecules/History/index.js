@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
 import _ from "lodash"
-//import Navbar from "Components/Molecules/Navbar"
-//import Footer from "Components/Molecules/Footer"
+
 import {Container, Text} from 'local_npm/react-container';
 import OptionItem from "./OptionItem"
 import Item from "./Item"
@@ -32,7 +30,7 @@ const History = () => {
 
   return(
   <React.Fragment>
-      <Container >
+      <Container>
       
        {!showAllHistory && places.length > 1 &&  <OptionItem
                 onClick={showAllHistoryOn} 
@@ -54,11 +52,9 @@ const History = () => {
           onClick={()=>{cleanHistory()}}
           center 
           margin="2rem auto" 
-          css="color: rgba(0,0,0,0.4); cursor: pointer;">
-
-        <IconDelete />
-     
-      Clear history 
+          css="color: rgba(0,0,0,0.4); cursor: pointer;"> 
+          <IconDelete />
+          Clear history 
 
         </Container>
       </Container>    
