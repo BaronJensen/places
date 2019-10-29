@@ -56,7 +56,7 @@ const HistoryItem = (props) => {
         onClick={()=>{removePlace(id)}} 
         circle="30px" 
         css={`
-
+          border: none;
           color: gray;
           &:hover{
             background: rgba(0,0,0,0.2);
