@@ -5,6 +5,12 @@ This app is an implementation of the google maps api in React.
 
 Note: The tests are imcomplete, so they are failing but app works...
 
+
+## Setup
+To run this app remember to add your MAPS api keyin your .env:
+
+REACT_APP_GOOGLE_MAP_API_KEY=[YOUR-API-KEY]
+
 ## Components Architecture
 
 Imports(<-)
